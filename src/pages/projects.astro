@@ -1,0 +1,95 @@
+---
+const projects = [
+  {
+    title: "JP Morgan Data Breach Analysis",
+    tag: "Security Analytics · Case Study",
+    description:
+      "Analytical breakdown of the 2014 JP Morgan breach, highlighting detection failures, attack timelines, and how data-driven monitoring could have reduced impact.",
+    image: "/images/jpm-breach-dashboard.png",
+    live: "https://your-live-link-here",
+    code: "https://github.com/bhavya-data-analysis"
+  },
+  {
+    title: "Sales Decision Dashboard",
+    tag: "Business Intelligence · Executive KPIs",
+    description:
+      "Executive-focused sales dashboard highlighting revenue, profit risk, discount impact, and actionable insights for leadership decision-making.",
+    image: "/images/sales-decision-dashboard.png",
+    live: "https://your-live-link-here",
+    code: "https://github.com/bhavya-data-analysis"
+  },
+  {
+    title: "Sales Performance & Profit Risk",
+    tag: "Analytics · Risk Evaluation",
+    description:
+      "Interactive analysis of sales trends, profitability, discount exposure, and regional performance with scenario-based filtering.",
+    image: "/images/sales-risk-dashboard.png",
+    live: "https://your-live-link-here",
+    code: "https://github.com/bhavya-data-analysis"
+  },
+  {
+    title: "Fake News Detector (Cloud Demo)",
+    tag: "NLP · Machine Learning",
+    description:
+      "Lightweight fake news detection system using TF-IDF and Logistic Regression, optimized for fast cloud deployment and real-time inference.",
+    image: "/images/fake-news-dashboard.png",
+    live: "https://your-live-link-here",
+    code: "https://github.com/bhavya-data-analysis"
+  }
+];
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects · Bhavya Pandya</title>
+    <meta
+      name="description"
+      content="Applied data analysis and machine learning projects with real dashboards and measurable impact."
+    />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container fade-up">
+        <h1>Selected Projects</h1>
+        <p style="margin-top: 20px;">
+          Real-world analytics and machine learning projects focused on decisions,
+          risk, and measurable outcomes — not just models.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        {projects.map((p, i) => (
+          <div class="project fade-up delay-1">
+            <div class="project-meta">{p.tag}</div>
+
+            <h2 style="margin-top: 12px;">{p.title}</h2>
+
+            <div class="divider"></div>
+
+            <p>{p.description}</p>
+
+            <div class="project-image">
+              <img src={p.image} alt={p.title} />
+            </div>
+
+            <div class="cta-row">
+              <a class="button" href={p.live} target="_blank">
+                Live Dashboard
+              </a>
+              <a class="button secondary" href={p.code} target="_blank">
+                View Code
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </body>
+</html>
