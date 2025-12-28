@@ -20,106 +20,215 @@ const name = "Bhavya Pandya";
     <title>About · {name}</title>
     <meta
       name="description"
-      content="Background, education, and focus areas of Bhavya Pandya — Data Analyst and Machine Learning practitioner."
+      content="Background, focus areas, and working style of Bhavya Pandya — data analytics and applied machine learning."
     />
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
 
   <body>
-    <!-- INTRO -->
-    <section>
-      <div class="container fade-in">
+    <!-- HERO / POSITIONING -->
+    <section class="about-hero">
+      <div class="container">
         <h1>About</h1>
-
-        <p style="margin-top: 24px;">
-          I’m an international graduate student in the United States with a
-          strong focus on data analysis and machine learning, particularly where
-          technical work directly supports decision-making.
+        <p class="hero-lead">
+          Data analytics graduate student building applied ML and decision-focused systems that stay interpretable, measurable, and deployable.
         </p>
-
-        <p style="margin-top: 20px;">
-          My interests lie in building clean, reproducible data pipelines,
-          developing interpretable models, and evaluating systems using metrics
-          that actually matter — not just accuracy, but reliability, trade-offs,
-          and real-world constraints.
+        <p class="hero-sub">
+          I combine an electronics foundation with data analytics and strategic business intelligence training to ship dashboards, pipelines, and models that serve decisions — not demos.
         </p>
       </div>
     </section>
 
-    <!-- PHILOSOPHY -->
-    <section>
-      <div class="container fade-in">
-        <h2>How I Approach Problems</h2>
-
+    <!-- FOCUS AREAS -->
+    <section class="focus">
+      <div class="container">
+        <h2>What I Focus On</h2>
         <div class="divider"></div>
-
-        <p>
-          I approach data problems by first understanding the decision being
-          supported. From there, I focus on selecting the right features,
-          choosing models that balance performance and interpretability, and
-          validating results through proper evaluation techniques.
-        </p>
-
-        <p style="margin-top: 20px;">
-          Rather than chasing complex architectures by default, I prioritize
-          strong baselines, transparent assumptions, and models that can be
-          explained to both technical and non-technical stakeholders.
-        </p>
-      </div>
-    </section>
-
-    <!-- TIMELINE -->
-    <section>
-      <div class="container fade-in">
-        <h2>Education & Experience</h2>
-
-        <div class="divider"></div>
-
-        <div style="margin-bottom: 48px;">
-          <h3>Graduate Studies — Data Analytics</h3>
-          <p class="muted" style="margin-top: 6px;">
-            Long Island University · United States
-          </p>
-          <p style="margin-top: 12px;">
-            Coursework and applied projects spanning machine learning,
-            statistical analysis, data privacy, and real-world analytics
-            applications.
-          </p>
-        </div>
-
-        <div style="margin-bottom: 48px;">
-          <h3>Applied Data & Machine Learning Projects</h3>
-          <p class="muted" style="margin-top: 6px;">
-            Independent · Academic & Self-Directed
-          </p>
-          <p style="margin-top: 12px;">
-            Designed and implemented multiple end-to-end projects covering text
-            classification, predictive analytics, and business-focused data
-            analysis. Emphasis on reproducibility, evaluation, and practical
-            deployment considerations.
-          </p>
+        <div class="focus-grid">
+          <div class="focus-card">
+            <h3>Analytics & Decision Support</h3>
+            <p>Dashboards and analysis that surface drivers, risks, and actions for clear choices.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Applied Machine Learning Systems</h3>
+            <p>Models built with clean features, monitored pipelines, and deployment paths in mind.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Evaluation, Metrics & Trade-offs</h3>
+            <p>Precision, recall, F1, mAP, and explainability used early to balance accuracy with risk.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section>
-      <div class="container fade-in">
-        <h2>More</h2>
-
+    <!-- HOW I WORK -->
+    <section class="approach">
+      <div class="container">
+        <h2>How I Work</h2>
         <div class="divider"></div>
+        <div class="approach-grid">
+          <div class="approach-block">
+            <h3>Decision-first framing</h3>
+            <p>Start from the decision to be supported; scope data, features, and interfaces to that goal.</p>
+          </div>
+          <div class="approach-block">
+            <h3>Clean data pipelines</h3>
+            <p>Reproducible prep and feature pipelines so outputs can be trusted and revisited.</p>
+          </div>
+          <div class="approach-block">
+            <h3>Interpretable models</h3>
+            <p>Favor clarity and explainability; add complexity only when it earns better decisions.</p>
+          </div>
+          <div class="approach-block">
+            <h3>Reliable evaluation</h3>
+            <p>Baseline first, then compare with decision-grade metrics and error trade-offs, not hype.</p>
+          </div>
+          <div class="approach-block">
+            <h3>Deployment realism</h3>
+            <p>Plan for drift, edge cases, and constraints so systems stay stable after launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <p>
-          For detailed implementations and code, visit my
-          <a href="https://github.com/bhavya-data-analysis" target="_blank">
-            GitHub
-          </a>
-          or connect with me on
-          <a href="https://www.linkedin.com/in/bhavya-91p/" target="_blank">
-            LinkedIn
-          </a>.
+    <!-- EDUCATION -->
+    <section class="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="divider"></div>
+        <div class="education-list">
+          <div class="edu-card">
+            <h3>M.S. in Data Analytics & Strategic Business Intelligence</h3>
+            <p class="muted">Long Island University · United States</p>
+            <p>Applied analytics and ML projects across NLP, dashboards, and deployed decision systems.</p>
+          </div>
+          <div class="edu-card">
+            <h3>B.E. in Electronics & Communications Engineering</h3>
+            <p class="muted">LJ University · India</p>
+            <p>Foundation in systems thinking and engineering that informs later analytics work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="closing">
+      <div class="container">
+        <div class="divider"></div>
+        <p class="muted closing-text">
+          Systems over demos, evaluation over hype, decisions over noise.
         </p>
       </div>
     </section>
+
+    <style>
+      .about-hero,
+      .focus,
+      .approach,
+      .education,
+      .closing {
+        padding: 86px 0 72px;
+      }
+
+      .about-hero h1 {
+        margin-bottom: 16px;
+      }
+
+      .hero-lead {
+        max-width: 780px;
+        color: rgba(255, 255, 255, 0.88);
+        margin: 0;
+      }
+
+      .hero-sub {
+        max-width: 760px;
+        margin-top: 18px;
+      }
+
+      h2 {
+        letter-spacing: -0.01em;
+      }
+
+      .focus-grid,
+      .approach-grid,
+      .education-list {
+        display: grid;
+        gap: 18px;
+      }
+
+      .focus-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .focus-card,
+      .approach-block,
+      .edu-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 18px 18px 16px;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      }
+
+      .focus-card h3,
+      .approach-block h3,
+      .edu-card h3 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+      }
+
+      .focus-card p,
+      .approach-block p,
+      .edu-card p {
+        margin: 0;
+        max-width: 60ch;
+      }
+
+      .approach-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .education {
+        padding-top: 92px;
+      }
+
+      .education-list {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+
+      .education .divider,
+      .approach .divider,
+      .focus .divider {
+        margin: 26px 0 24px;
+      }
+
+      .closing {
+        padding: 48px 0 80px;
+      }
+
+      .closing .divider {
+        margin: 18px 0 16px;
+      }
+
+      .closing-text {
+        max-width: 520px;
+      }
+
+      @media (max-width: 720px) {
+        .about-hero,
+        .focus,
+        .approach,
+        .education,
+        .closing {
+          padding: 68px 0 60px;
+        }
+
+        .focus-card,
+        .approach-block,
+        .edu-card {
+          padding: 16px;
+        }
+      }
+    </style>
   </body>
 </html>

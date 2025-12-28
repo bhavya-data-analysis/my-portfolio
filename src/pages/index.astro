@@ -10,7 +10,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 ---
 const name = "Bhavya Pandya";
-const role = "Data Analyst · Machine Learning · Data Science";
+const role = "Data Analytics · Applied Machine Learning · Data Science";
 ---
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ const role = "Data Analyst · Machine Learning · Data Science";
     <title>{name}</title>
     <meta
       name="description"
-      content="Data Analyst and Machine Learning practitioner focused on applied, metrics-driven projects."
+      content="Data analytics and applied machine learning portfolio featuring decision-focused dashboards and end-to-end ML systems."
     />
     <link rel="stylesheet" href="/src/styles/global.css" />
   </head>
@@ -34,19 +34,23 @@ const role = "Data Analyst · Machine Learning · Data Science";
           <div class="hero-role">{role}</div>
 
           <h1>
-            I build applied data systems<br />
-            that turn models into decisions.
+            I build analytics and machine learning systems<br />
+            that turn data into decisions.
           </h1>
 
-          <p style="margin-top: 24px;">
-            International graduate student focused on analytics, machine learning,
-            and real-world problem solving — with an emphasis on clean data,
-            measurable impact, and production-ready thinking.
+          <p class="hero-lead">
+            Data analytics graduate student with hands-on experience building
+            analytics and applied machine learning systems that support
+            data-driven decision-making. Strong background in Python-based
+            analysis, exploratory data analysis, feature engineering, and model
+            evaluation, with project work spanning dashboards, statistical
+            analysis, and machine learning applications across NLP, computer
+            vision, and predictive modeling.
           </p>
 
           <div class="hero-actions">
             <a href="/projects" class="button">View Projects</a>
-            <a href="/about" class="button">About Me</a>
+            <a href="/about" class="button secondary">About Me</a>
           </div>
         </div>
       </div>
@@ -63,117 +67,136 @@ const role = "Data Analyst · Machine Learning · Data Science";
           </h3>
 
           <p class="credibility-text">
-            Currently pursuing a Master’s in Data Analytics at Long Island University,
-            with a strong focus on applied machine learning, analytics dashboards,
-            and decision-driven modeling. My work emphasizes clean data pipelines,
-            interpretable models, and measurable business impact.
+            Currently pursuing a Master’s in Data Analytics at Long Island
+            University, with project experience spanning analytics dashboards,
+            applied machine learning, and end-to-end data pipelines. My work
+            focuses on clean data preparation, appropriate evaluation metrics,
+            and building systems that can be realistically interpreted and
+            deployed.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- FEATURED PROJECTS -->
+    <section class="featured-projects">
+      <div class="container fade-in">
+        <h2>Featured Projects</h2>
+        <p class="section-subtext muted">
+          Selected work across analytics, machine learning, and decision-oriented systems.
+        </p>
+
+        <div class="divider"></div>
+
+        <!-- Project 1 (Flagship) -->
+        <div class="project-card glass flagship">
+          <img
+            src="/images/fake-news-dashboard.png"
+            alt="Fake News Detection Dashboard"
+          />
+
+          <div class="project-content">
+            <h3>Fake News Detection System (Cloud Demo)</h3>
+            <p class="project-metrics">
+              NLP · Text Classification · Model Evaluation
+            </p>
+
+            <p>
+              End-to-end misinformation detection pipeline comparing TF-IDF + Logistic Regression and deep models.
+              Focused on evaluation (precision/recall/F1) and deployed as a lightweight cloud demo for real-time inference.
+            </p>
+
+            <a class="button" href="/projects">View in Projects</a>
+          </div>
+        </div>
+
+        <!-- Project 2 (ONE project, TWO dashboards) -->
+        <div class="project-card glass primary">
+          <img
+            src="/images/sales-decision-dashboard.png"
+            alt="Sales Analytics & Decision Dashboard"
+          />
+
+          <div class="project-content">
+            <h3>Sales Analytics & Decision Dashboard</h3>
+            <p class="project-metrics">
+              Streamlit · Diagnostic vs Decision Views · Executive KPIs
+            </p>
+
+            <p>
+              One sales intelligence project delivered as two dashboards:
+              <strong>A2 (Diagnostic)</strong> explains what is happening and why, while
+              <strong>A3 (Decision)</strong> converts findings into executive-ready KPIs and actions.
+            </p>
+
+            <div class="hero-actions" style="margin-top: 16px;">
+              <a
+                class="button"
+                href="https://xcompany-ai-sales-dashboard-bdel2x6pwedw8pcqmagvqc.streamlit.app"
+                target="_blank"
+              >
+                A2 Diagnostic
+              </a>
+              <a
+                class="button secondary"
+                href="https://xcompany-ai-sales-dashboard-dsp5zzmrzjielnpwjfezp4.streamlit.app"
+                target="_blank"
+              >
+                A3 Decision
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 (Research) -->
+        <div class="project-card glass research">
+          <img
+            src="/images/rdi.png"
+            alt="Reflective Decision Intelligence (RDI)"
+          />
+
+          <div class="project-content">
+            <h3>Reflective Decision Intelligence (RDI)</h3>
+            <p class="project-metrics">
+              Decision Quality · Cognitive Risk Modeling · Measurement & Control
+            </p>
+
+            <p>
+              A decision quality and cognitive risk modeling system that turns free-form human decisions into structured,
+              comparable profiles. Not a chatbot and not advice — it measures fragility, detects cognitive failure patterns,
+              and tracks how specific questions help or hurt reflection.
+            </p>
+
+            <a class="button" href="/projects">View in Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- WHAT I ACTUALLY DO -->
-	<!-- FEATURED PROJECTS -->
-<section class="featured-projects">
-  <div class="container fade-in">
-    <h2>Featured Projects</h2>
-    <p class="muted" style="margin-top: 12px;">
-      Applied analytics and machine learning projects with real dashboards,
-      measurable performance, and decision-focused outcomes.
-    </p>
-
-    <div class="divider"></div>
-
-    <!-- Project 1 -->
-    <div class="project-card glass">
-      <img
-        src="/images/jpm-breach-dashboard.png"
-        alt="JP Morgan Breach Dashboard"
-      />
-
-      <div class="project-content">
-        <h3>JP Morgan Data Breach Analysis</h3>
-        <p class="project-metrics">
-          Security Analytics · Timeline Reconstruction · Risk Insights
-        </p>
-
-        <p>
-          Analytical case study breaking down the 2014 JP Morgan breach,
-          focusing on detection failures, attack timelines, and how data-driven
-          monitoring could reduce real-world impact.
-        </p>
-
-        <a class="button" href="#" target="_blank">Live Dashboard</a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card glass">
-      <img
-        src="/images/sales-decision-dashboard.png"
-        alt="Sales Decision Dashboard"
-      />
-
-      <div class="project-content">
-        <h3>Sales Decision Dashboard</h3>
-        <p class="project-metrics">
-          Business Intelligence · Executive KPIs · Profit Analysis
-        </p>
-
-        <p>
-          Executive-level dashboard highlighting revenue, discount impact,
-          profitability risks, and actionable insights for business leaders.
-        </p>
-
-        <a class="button" href="#" target="_blank">Live Dashboard</a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card glass">
-      <img
-        src="/images/fake-news-dashboard.png"
-        alt="Fake News Detection Dashboard"
-      />
-
-      <div class="project-content">
-        <h3>Fake News Detection System</h3>
-        <p class="project-metrics">
-          NLP · Classification · Accuracy ~92% · ROC-AUC ~0.91
-        </p>
-
-        <p>
-          End-to-end fake news detection pipeline using TF-IDF and Logistic
-          Regression, optimized for fast cloud deployment and real-time inference.
-        </p>
-
-        <a class="button" href="#" target="_blank">Live Dashboard</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section>
+    <section class="plain-section">
       <div class="container fade-in">
         <h2>What I Actually Do</h2>
 
         <div class="divider"></div>
 
         <p>
-          I work at the intersection of data analysis and machine learning,
-          focusing on problems where metrics matter — classification accuracy,
-          ROC-AUC, model reliability, and business relevance.
+          I work at the intersection of data analysis and applied machine
+          learning, focusing on problems where metrics matter — from statistical
+          analysis and KPI tracking to classification performance and model
+          reliability.
         </p>
 
         <p style="margin-top: 20px;">
-          My projects emphasize reproducible pipelines, clean feature engineering,
-          and models that can realistically be evaluated, explained, and deployed.
+          My projects emphasize reproducible pipelines, clean feature
+          engineering, and systems that can be realistically evaluated,
+          explained, and deployed in practical settings.
         </p>
       </div>
     </section>
 
     <!-- LINKS / CTA -->
-    <section>
+    <section class="footer-links">
       <div class="container fade-in">
         <h2>Links</h2>
 
@@ -186,7 +209,7 @@ const role = "Data Analyst · Machine Learning · Data Science";
         </p>
 
         <p style="margin-top: 20px;">
-          Resume available on request and via project pages.
+          Resume available via LinkedIn and project repositories.
         </p>
       </div>
     </section>
